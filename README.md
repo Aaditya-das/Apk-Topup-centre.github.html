@@ -1,6 +1,6 @@
-# Free Fire Top-Up Website 🔥💎
+# Free Fire Top-Up Website Nepal 🔥💎
 
-A modern, responsive website for Free Fire diamond top-up services with a clean and engaging user interface.
+A modern, responsive website for Free Fire diamond top-up services in Nepal with Nepali Rupee (NPR) pricing and local payment methods.
 
 ## Features
 
@@ -12,22 +12,23 @@ A modern, responsive website for Free Fire diamond top-up services with a clean 
 - **Smooth Animations**: Engaging hover effects and transitions
 - **Modern UI**: Gradient backgrounds and glassmorphism effects
 
-## Diamond Packages
+## Diamond Packages (NPR Pricing)
 
-- 100 Diamonds - $1.99
-- 310 Diamonds - $4.99 (+10 Bonus)
-- 520 Diamonds - $9.99 (+20 Bonus)
-- 1060 Diamonds - $19.99 (+60 Bonus) [POPULAR]
-- 2180 Diamonds - $49.99 (+180 Bonus)
-- 5600 Diamonds - $99.99 (+600 Bonus)
+- 100 Diamonds - NPR 250
+- 310 Diamonds - NPR 650 (+10 Bonus)
+- 520 Diamonds - NPR 1,300 (+20 Bonus)
+- 1060 Diamonds - NPR 2,600 (+60 Bonus) [POPULAR]
+- 2180 Diamonds - NPR 6,500 (+180 Bonus)
+- 5600 Diamonds - NPR 13,000 (+600 Bonus)
 
 ## Payment Methods Supported
 
+- eSewa (Nepal's popular digital wallet)
+- Khalti (Digital payment solution)
+- IME Pay (Mobile banking)
+- Fonepay (Digital payment gateway)
+- Bank Transfer
 - Credit Card
-- Debit Card
-- PayPal
-- Google Pay
-- Apple Pay
 
 ## How to Run
 

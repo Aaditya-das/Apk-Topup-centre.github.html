@@ -1,3 +1,10 @@
+// NPR Currency formatting function
+function formatNPR(amount) {
+    // Convert to number and format with commas
+    const num = parseFloat(amount);
+    return num.toLocaleString('en-NP');
+}
+
 // Package selection functionality
 const packageCards = document.querySelectorAll('.package-card');
 const selectedPackageInput = document.getElementById('selectedPackage');
@@ -24,8 +31,8 @@ packageCards.forEach(card => {
 
         // Update order summary
         summaryPackage.textContent = `${packageAmount} Diamonds`;
-        summaryPrice.textContent = `$${packagePrice}`;
-        summaryTotal.textContent = `$${packagePrice}`;
+        summaryPrice.textContent = `NPR ${formatNPR(packagePrice)}`;
+        summaryTotal.textContent = `NPR ${formatNPR(packagePrice)}`;
 
         // Add animation
         this.style.animation = 'none';
@@ -95,8 +102,8 @@ topupForm.addEventListener('submit', function(e) {
         topupForm.reset();
         packageCards.forEach(c => c.classList.remove('selected'));
         summaryPackage.textContent = 'Not selected';
-        summaryPrice.textContent = '$0.00';
-        summaryTotal.textContent = '$0.00';
+        summaryPrice.textContent = 'NPR 0';
+        summaryTotal.textContent = 'NPR 0';
         selectedPackageInput.value = '';
         selectedPriceInput.value = '';
 

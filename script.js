@@ -1,3 +1,9 @@
+// Format NPR currency
+function formatNPR(amount) {
+    const numAmount = parseFloat(amount);
+    return `रू ${numAmount.toLocaleString('en-NP')}`;
+}
+
 // Package selection functionality
 const packageCards = document.querySelectorAll('.package-card');
 const selectedPackageInput = document.getElementById('selectedPackage');
@@ -24,8 +30,9 @@ packageCards.forEach(card => {
 
         // Update order summary
         summaryPackage.textContent = `${packageAmount} Diamonds`;
-        summaryPrice.textContent = `$${packagePrice}`;
-        summaryTotal.textContent = `$${packagePrice}`;
+        const formattedPrice = formatNPR(packagePrice);
+        summaryPrice.textContent = formattedPrice;
+        summaryTotal.textContent = formattedPrice;
 
         // Add animation
         this.style.animation = 'none';
@@ -95,8 +102,8 @@ topupForm.addEventListener('submit', function(e) {
         topupForm.reset();
         packageCards.forEach(c => c.classList.remove('selected'));
         summaryPackage.textContent = 'Not selected';
-        summaryPrice.textContent = '$0.00';
-        summaryTotal.textContent = '$0.00';
+        summaryPrice.textContent = 'रू 0';
+        summaryTotal.textContent = 'रू 0';
         selectedPackageInput.value = '';
         selectedPriceInput.value = '';
 

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Top Up - Get Diamonds Instantly</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>🔥 Free Fire Top Up</h1>
+            </div>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#topup">Top Up</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Get Free Fire Diamonds Instantly!</h2>
+                <p>Fast, Safe & Reliable Top Up Service</p>
+                <a href="#topup-form" class="cta-button">Top Up Now</a>
+            </div>
+            <div class="hero-image">
+                <div class="diamond-icon">💎</div>
+            </div>
+        </section>
+
+        <!-- Top Up Form Section -->
+        <section id="topup-form" class="topup-section">
+            <div class="form-container">
+                <h2>Top Up Your Account</h2>
+                <form id="topupForm">
+                    <div class="form-group">
+                        <label for="playerId">Player ID</label>
+                        <input type="text" id="playerId" name="playerId" placeholder="Enter your Free Fire ID" required>
+                        <small>You can find your ID in your profile</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="playerName">Player Name (Optional)</label>
+                        <input type="text" id="playerName" name="playerName" placeholder="Enter your in-game name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Select Diamond Package</label>
+                        <div class="package-grid">
+                            <div class="package-card" data-package="100" data-price="1.99">
+                                <div class="package-icon">💎</div>
+                                <div class="package-amount">100 Diamonds</div>
+                                <div class="package-price">$1.99</div>
+                            </div>
+                            <div class="package-card" data-package="310" data-price="4.99">
+                                <div class="package-icon">💎</div>
+                                <div class="package-amount">310 Diamonds</div>
+                                <div class="package-price">$4.99</div>
+                                <div class="package-bonus">+10 Bonus</div>
+                            </div>
+                            <div class="package-card" data-package="520" data-price="9.99">
+                                <div class="package-icon">💎</div>
+                                <div class="package-amount">520 Diamonds</div>
+                                <div class="package-price">$9.99</div>
+                                <div class="package-bonus">+20 Bonus</div>
+                            </div>
+                            <div class="package-card popular" data-package="1060" data-price="19.99">
+                                <div class="popular-badge">POPULAR</div>
+                                <div class="package-icon">💎</div>
+                                <div class="package-amount">1060 Diamonds</div>
+                                <div class="package-price">$19.99</div>
+                                <div class="package-bonus">+60 Bonus</div>
+                            </div>
+                            <div class="package-card" data-package="2180" data-price="49.99">
+                                <div class="package-icon">💎</div>
+                                <div class="package-amount">2180 Diamonds</div>
+                                <div class="package-price">$49.99</div>
+                                <div class="package-bonus">+180 Bonus</div>
+                            </div>
+                            <div class="package-card" data-package="5600" data-price="99.99">
+                                <div class="package-icon">💎</div>
+                                <div class="package-amount">5600 Diamonds</div>
+                                <div class="package-price">$99.99</div>
+                                <div class="package-bonus">+600 Bonus</div>
+                            </div>
+                        </div>
+                        <input type="hidden" id="selectedPackage" name="selectedPackage" required>
+                        <input type="hidden" id="selectedPrice" name="selectedPrice" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="">Select Payment Method</option>
+                            <option value="credit-card">Credit Card</option>
+                            <option value="debit-card">Debit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="google-pay">Google Pay</option>
+                            <option value="apple-pay">Apple Pay</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-row">
+                            <span>Selected Package:</span>
+                            <span id="summaryPackage">Not selected</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Price:</span>
+                            <span id="summaryPrice">$0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="summaryTotal">$0.00</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-button">Complete Purchase</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2>Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Delivery</h3>
+                    <p>Get your diamonds within minutes of purchase</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>100% Safe</h3>
+                    <p>Secure payment and account protection guaranteed</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive prices with bonus diamonds</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎧</div>
+                    <h3>24/7 Support</h3>
+                    <p>Customer service available round the clock</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>We provide fast and secure Free Fire diamond top-up services with instant delivery.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#topup">Top Up</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: support@fftopup.com</p>
+                    <p>Phone: +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Free Fire Top Up. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="success-icon">✅</div>
+            <h2>Order Successful!</h2>
+            <p>Your diamonds will be credited to your account within 5 minutes.</p>
+            <p>Check your email for order confirmation.</p>
+            <button class="modal-button" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
